@@ -1,0 +1,17 @@
+//
+//  UsefulPracticesTests.swift
+//  UsefulPracticesTests
+//
+//  Created by Alexandr Zhelanov on 12/11/25.
+//
+
+import Testing
+@testable import UsefulPractices
+
+struct UsefulPracticesTests {
+
+    @Test func example() async throws {
+        // Write your test here and use APIs like `#expect(...)` to check expected conditions.
+    }
+
+}
