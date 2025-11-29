@@ -11,7 +11,9 @@ import SwiftUI
 struct UsefulPracticesApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            UIKitMaskedTextProgressBarWrapper()
+                .aspectRatio(5, contentMode: .fit)
+                .padding()
         }
     }
 }
