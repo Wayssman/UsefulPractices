@@ -29,9 +29,23 @@
 		70D0BB4B2EC46975008C9A88 /* UsefulPracticesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UsefulPracticesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		708197152EDB205A009FBBE0 /* Exceptions for "UsefulPractices" folder in "UsefulPractices" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				SwiftUI/CustomLayout/README.md,
+				UIKit/AlphaSelectLayerHackView/README.md,
+			);
+			target = 70D0BB332EC46973008C9A88 /* UsefulPractices */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		70D0BB362EC46973008C9A88 /* UsefulPractices */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				708197152EDB205A009FBBE0 /* Exceptions for "UsefulPractices" folder in "UsefulPractices" target */,
+			);
 			path = UsefulPractices;
 			sourceTree = "<group>";
 		};
