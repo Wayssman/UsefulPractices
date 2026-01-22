@@ -11,9 +11,11 @@ import SwiftUI
 struct UsefulPracticesApp: App {
     var body: some Scene {
         WindowGroup {
-            UIKitMaskedTextProgressBarWrapper()
+            /*UIKitMaskedTextProgressBarWrapper()
                 .aspectRatio(5, contentMode: .fit)
-                .padding()
+                .padding()*/
+            SkeletonExample(isLoading: false)
+            SkeletonExample(isLoading: true)
         }
     }
 }

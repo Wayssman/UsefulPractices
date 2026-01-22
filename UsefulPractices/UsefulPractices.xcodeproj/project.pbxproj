@@ -34,6 +34,7 @@
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				SwiftUI/CustomLayout/README.md,
+				SwiftUI/Skeleton/README.md,
 				UIKit/AlphaSelectLayerHackView/README.md,
 			);
 			target = 70D0BB332EC46973008C9A88 /* UsefulPractices */;
