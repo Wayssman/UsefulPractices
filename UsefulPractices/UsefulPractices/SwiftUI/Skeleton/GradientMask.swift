@@ -13,19 +13,24 @@ struct GradientMask: View {
     let edgeColor = Color.black.opacity(1)
     
     var body: some View {
-        VStack {
+        GeometryReader { geo in
+            let size = max(geo.size.width, geo.size.height) * 2
+            
             LinearGradient(
                 gradient: .init(stops: [
                     .init(color: edgeColor, location: phase - 0.1),
                     .init(color: centerColor, location: phase),
                     .init(color: edgeColor, location: phase + 0.1)
                 ]),
-                startPoint: .init(x: 0, y: 0.5),
-                endPoint: .init(x: 1, y: 0.5)
+                startPoint: .leading,
+                endPoint: .trailing
             )
-            .scaleEffect(3)
+            .frame(width: size, height: size)
             .rotationEffect(.degrees(-45))
+            .position(x: geo.size.width / 2,
+                      y: geo.size.height / 2)
         }
+        .ignoresSafeArea()
     }
 }
 
