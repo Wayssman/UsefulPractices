@@ -14,8 +14,9 @@ struct UsefulPracticesApp: App {
             /*UIKitMaskedTextProgressBarWrapper()
                 .aspectRatio(5, contentMode: .fit)
                 .padding()*/
-            SkeletonExample(isLoading: false)
-            SkeletonExample(isLoading: true)
+            //SkeletonExample(isLoading: false)
+            //SkeletonExample(isLoading: true)
+            FocusableViewControllerWrapper()
         }
     }
 }
