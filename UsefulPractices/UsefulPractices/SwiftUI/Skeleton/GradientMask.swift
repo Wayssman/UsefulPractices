@@ -7,6 +7,12 @@
 
 import SwiftUI
 
+/// A view with a gradient, which will be used as an animated mask. The view contains one inclined gradient line.
+///
+/// Gradient should recive one input parameter – it's phase. Phase it is location of the gradient line on view. It's also very helpful for animating GradientMask.
+/// ```
+/// GradientMask(phase: 0.5)
+/// ```
 struct GradientMask: View {
     let phase: CGFloat
     let centerColor = Color.black.opacity(0.5)

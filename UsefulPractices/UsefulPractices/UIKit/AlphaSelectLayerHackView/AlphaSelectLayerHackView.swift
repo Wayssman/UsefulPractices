@@ -13,6 +13,8 @@ final class AlphaSelectLayerHackView: UIView {
     private var baseLayer: CALayer = CALayer()
     private var areasLayers: [HeadArea: CALayer] = [:]
     private var selectedAreas = Set<HeadArea>()
+    /// Some property for documentation linking test.
+    var documentedProperty: Int = 0
     
     // MARK: Initializers
     override init(frame: CGRect) {
@@ -71,8 +73,11 @@ final class AlphaSelectLayerHackView: UIView {
     }
     
     /// HACK: Get the alpha channel of a point on the layer.
-    /// If the alpha is zero, it’s blank space—not a needed element.
+    /// If the alpha is zero, it’s blank space — not a needed element.
     /// With this hack, we can avoid drawing the layer’s contents using UIBezierPath, etc., and just load images instead.
+    /// 
+    /// - Parameter point: The location on layer to get alpha.
+    /// - Returns
     private func handleFrontTouch(_ point: CGPoint) {
         for info in areasLayers {
             let layer = info.value
@@ -86,6 +91,18 @@ final class AlphaSelectLayerHackView: UIView {
             }
             return
         }
+    }
+    
+    /// Test function for documentation markdown.
+    ///
+    /// Do nothing and don't affect on ``documentedProperty`` property.
+    ///
+    /// - Parameters:
+    ///     - first: First parameter.
+    ///     - second: Second parameter.
+    /// - Returns: Some integer.
+    func testDocumentationFunction(first: String, second: String) -> Int {
+        return 0
     }
     
     // MARK: User Interactivity

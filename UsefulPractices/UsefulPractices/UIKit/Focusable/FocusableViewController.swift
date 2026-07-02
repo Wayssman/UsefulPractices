@@ -109,6 +109,7 @@ struct FocusableViewControllerWrapper: UIViewControllerRepresentable {
         layout.itemSize = .init(width: 100, height: 100)
         layout.minimumInteritemSpacing = 24
         layout.minimumLineSpacing = 24
+        layout.sectionInset = .zero
         return FocusableViewController(collectionViewLayout: layout)
     }
     
@@ -120,4 +121,5 @@ struct FocusableViewControllerWrapper: UIViewControllerRepresentable {
 // MARK: Preview
 #Preview {
     FocusableViewControllerWrapper()
+        .ignoresSafeArea()
 }
