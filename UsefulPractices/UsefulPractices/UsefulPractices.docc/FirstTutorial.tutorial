@@ -1,0 +1,23 @@
+@Tutorial(time: 1) {
+    @Intro(title: "Intro") {
+        This is a example of swift tutorial!
+        
+        @Image(source: practice.png, alt: "hs")
+    }
+    
+    @Section(title: "First Section") {
+        @ContentAndMedia {
+            Welcome to the first section of my tutorial.
+            
+            @Image(source: practice.png, alt: "hs")
+        }
+        
+        @Steps {
+            @Step {
+                Look at my struct.
+                
+                @Code(name: "file.swift", file: step_1.swift)
+            }
+        }
+    }
+}

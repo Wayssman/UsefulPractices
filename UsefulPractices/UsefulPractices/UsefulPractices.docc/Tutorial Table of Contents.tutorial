@@ -1,0 +1,13 @@
+@Tutorials(name: "My First Tutorial") {
+    @Intro(title: "Introduction") {
+        Hi guys!
+        
+        @Image(source: practice.png, alt: "hearthstone")
+    }
+    
+    @Chapter(name: "First Chapter") {
+        This chapter is about single tutorial example.
+        @Image(source: practice.png, alt: "hearthstone")
+        @TutorialReference(tutorial: "doc:FirstTutorial")
+    }
+}
